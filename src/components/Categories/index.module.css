@@ -1,0 +1,74 @@
+.container {
+    margin-top: 65px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+}
+.categories_for_women:hover, .categories_for_men:hover, .categories_for_kids:hover, .categories_accesories:hover {
+    opacity: 0.5;
+}
+.categories_for_women, .categories_for_men, .categories_for_kids {
+    width: 360px;
+    height: 260px;
+}
+
+.categories_for_women {
+    background-image: url(../../media/for-woman.jpg);
+   
+}
+.categories_for_men {
+    background-image: url(../../media/for-man.jpg);
+    
+}
+.categories_for_kids {
+    background-image: url(../../media/for-kids.jpg);
+   
+}
+.categories_accesories {
+    background-image: url(../../media/accesories.jpg);
+    grid-column: 1/4;
+
+    width: 100%;
+    height: 116px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.categories_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+}
+
+.categories_info {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.categories_title {
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 21px;
+    color: #F16D7F;
+}
+
+@media (max-width: 390px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+    .container a {
+        width: 343px;
+    }
+    .categories_accesories {
+        grid-column: auto;
+        height: 111px;
+    }
+}

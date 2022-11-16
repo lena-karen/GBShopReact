@@ -1,0 +1,45 @@
+.container{
+    margin-top: 95px;
+    background-color: #222224;
+    padding: 103px 0;
+}
+.services_flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.delivery, .discounts, .assurance {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.services_title {
+    font-weight: 400;
+    font-size: 19.96px;
+    line-height: 24px;
+    color: #FBFBFB;
+    margin: 28px 0 16px;
+}
+.services_text {
+    font-weight: 300;
+    font-size: 13.972px;
+    line-height: 17px;
+    color: #FBFBFB;
+    width: 360px;
+    text-align: center;
+}
+
+@media (max-width: 390px) {
+    .container {
+        padding: 48px 0 81px 0;
+    }
+    .services_flex {
+        flex-direction: column;
+        gap: 46px;
+    }
+    .delivery, .discounts, .assurance {
+        width: 100%;
+    }
+}

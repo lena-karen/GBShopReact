@@ -1,0 +1,111 @@
+.container {
+    background-image: url(../../media/registration-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 86px 0 126px;
+}
+.registration_flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.registration_info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.registration_info_text {
+    margin-top: 30px;
+    width: 360px;
+
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+}
+.registration_info_text span {
+    font-style: italic;
+}
+.registration_info_img {
+    width: 96px;
+    height: 96px;
+}
+.registration_form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.registration_form_text {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+}
+.registration_form span {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+}
+.registration_input_block {
+    width: 356px;
+    height: 49px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+}
+.registration_input {
+    background-color: #E1E1E1;
+    border-radius: 20px 0 0 20px;
+    height: 100%;
+    padding: 10px 15px;
+    color: #222224;
+    border: none;
+    width: 100%;
+    outline: none;
+}
+.registration_form_btn {
+    border-radius: 0 20px 20px 0;
+    height: 100%;
+    background-color: #F16D7F;
+    padding: 10px 15px;
+    color: white;
+    border: none;
+}
+
+@media (max-width: 390px) {
+    .container {
+        padding: 64px 0 110px;
+    }
+    .registration_flex {
+        flex-direction: column;
+        align-items: center;
+    }
+    .registration_info_text {
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 22px;
+    }
+    .registration_info_text span {
+        font-size: 18px;
+        line-height: 21px;
+    }
+    .registration_form {
+        padding-top: 60px;
+        width: 100%;
+    }
+    .registration_form_text {
+        line-height: 36px;
+        width: 100%;
+    }
+    .registration_form span {
+      
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .registration_input_block {
+        margin-top: 27px;
+    }
+}
