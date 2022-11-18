@@ -4,6 +4,8 @@ import close from '../../media/close.png'
 import {MenuOutlined} from '@ant-design/icons'
 import account from '../../media/account.png'
 import cart from '../../media/cart.png'
+import { categories } from '../data/categories'
+import {Routes, Route, Link} from 'react-router-dom'
 export default function Nav({activeMenu, setMenuActive}) {
 console.log(activeMenu)
   return (
@@ -15,9 +17,9 @@ console.log(activeMenu)
                     <img src={account} alt="account" />
                 </a>
            
-                <a href="#">
+                <Link to = {'/cart_page'}>
                     <img src={cart} alt="cart" />
-                </a>
+                </Link>
             
 
             <div className = {[s.menu, activeMenu ? s.active_menu : ''].join(' ')}>
@@ -26,30 +28,18 @@ console.log(activeMenu)
                     <li>Menu</li>
                     <li>Man
                         <ul className = {s.nav_sublist}>
-                            <li>Accessories</li>
-                            <li>Bags</li>
-                            <li>Denim</li>
-                            <li>T-Shirts</li>
+                            {categories.map(el => <li>{el.name} key = {el.id}</li>)}
                         </ul>
                     </li>
 
                     <li>Woman
                         <ul className = {s.nav_sublist}>
-                            <li>Accessories</li>
-                            <li>Jacketss & Coats</li>
-                            <li>Polos</li>
-                            <li>T-Shirts</li>
-                            <li>Shirts</li>
+                            {categories.map(el => <li>{el.name} key = {el.id}</li>)}
                         </ul>
                     </li>
                     <li>Kids
                         <ul className = {s.nav_sublist}>
-                            <li>Accessories</li>
-                            <li>Jacketss & Coats</li>
-                            <li>Polos</li>
-                            <li>T-Shirts</li>
-                            <li>Shirts</li>
-                            <li>Bags</li>
+                            {categories.map(el => <li>{el.name} key = {el.id}</li>)}
                         </ul>
                     </li>
                 </ul>

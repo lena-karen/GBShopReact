@@ -1,0 +1,26 @@
+.catalog_header {
+    height: 148px;
+    background-color: #F8F3F4;
+}
+.catalog_flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.catalog_flex h2 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+}
+.filter_sort_block {
+    display: flex;
+    padding-top: 51px;
+}
+.filter_sort_block div {
+    margin-left: 304px;
+}
+.filter_sort_block select {
+    border: none;
+}
